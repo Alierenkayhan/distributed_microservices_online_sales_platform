@@ -17,7 +17,7 @@ namespace EventBus.Base.Abstraction
 
         void RemoveSubscription<T,TH>() where TH:IIntegrationEventHandler<T> where T:IntegrationEvent;
 
-        bool HasSubscriptionForEvemt<T>() where T:IntegrationEvent;
+        bool HasSubscriptionsForEvent<T>() where T:IntegrationEvent;
 
         bool HasSubscriptionsForEvent(string eventName);
 
